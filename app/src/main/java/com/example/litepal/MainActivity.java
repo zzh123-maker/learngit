@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
         List<BOOK> books=DataSupport.findAll(BOOK.class);
         for(BOOK book1:books)
             Log.d("MainActivity", String.valueOf(book1.getId()));
-        DataSupport.deleteAll(BOOK.class,"id=?","2");
+        DataSupport.deleteAll(BOOK.class,"id=?","1");
     }
 }
